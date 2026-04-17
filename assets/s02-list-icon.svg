@@ -1,0 +1,21 @@
+<svg preserveAspectRatio="none" width="100%" height="100%" overflow="visible" style="display: block;" viewBox="0 0 24.2 24.2" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Icone">
+<mask id="mask0_0_4" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="25" height="25">
+<g id="Group">
+<g id="Group_2">
+<path id="Vector" d="M12.1 23.1C18.1753 23.1 23.1 18.1753 23.1 12.1C23.1 6.0247 18.1753 1.1 12.1 1.1C6.0247 1.1 1.1 6.0247 1.1 12.1C1.1 18.1753 6.0247 23.1 12.1 23.1Z" fill="var(--fill-0, white)" stroke="var(--stroke-0, white)" stroke-width="2.2" stroke-linejoin="round"/>
+<path id="Vector_2" d="M15.2113 8.98853L8.98864 15.2112M8.98864 8.98853L15.2113 15.2112" stroke="var(--stroke-0, black)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</mask>
+<g mask="url(#mask0_0_4)">
+<path id="Vector_3" d="M-1.1 -1.1H25.3V25.3H-1.1V-1.1Z" fill="url(#paint0_linear_0_4)"/>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_0_4" x1="12.1" y1="-1.1" x2="12.1" y2="25.3" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FF0000"/>
+<stop offset="1" stop-color="#570000"/>
+</linearGradient>
+</defs>
+</svg>
