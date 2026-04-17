@@ -5,14 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#060f1d" />
     <title>Controle Empresarial</title>
+    <link
+      rel="preload"
+      as="image"
+      href="assets/hero-dashboard-1200.avif"
+      imagesrcset="assets/hero-dashboard-1200.avif 1200w, assets/hero-dashboard-2200.avif 2200w"
+      imagesizes="(max-width: 760px) calc(100vw - 24px), (max-width: 1180px) calc(100vw - 40px), (max-width: 1440px) calc(100vw - 120px), 1112px"
+      type="image/avif"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@600&amp;family=Montserrat:wght@400&amp;family=Saira:wght@400;600;700&amp;family=Sora:wght@300;400;500;600;700&amp;display=swap"
+      href="https://fonts.googleapis.com/css2?family=Saira:wght@400;600;700&amp;family=Sora:wght@300;400;500;600;700&amp;display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css" />
     <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#hero-content">Pular para o conteudo principal</a>
@@ -48,12 +56,17 @@
 
         <header class="hero__header">
           <a class="hero__brand" href="#inicio" aria-label="Controle Empresarial">
-            <img
-              src="assets/logo-controle-empresarial.png"
-              alt="Logo Controle Empresarial"
-              width="161"
-              height="43"
-            />
+            <picture>
+              <source srcset="assets/logo-controle-empresarial-512.avif" type="image/avif" />
+              <source srcset="assets/logo-controle-empresarial-512.webp" type="image/webp" />
+              <img
+                src="assets/logo-controle-empresarial.png"
+                alt="Logo Controle Empresarial"
+                width="161"
+                height="43"
+                decoding="async"
+              />
+            </picture>
           </a>
 
           <div class="hero__header-group">
@@ -87,24 +100,44 @@
 
         <div class="hero__stage-wrap" aria-hidden="true">
           <div class="hero__stage">
-            <img
-              src="assets/hero-dashboard.png"
-              alt=""
-              width="1086"
-              height="613"
-              fetchpriority="high"
-            />
+            <picture>
+              <source
+                srcset="assets/hero-dashboard-1200.avif 1200w, assets/hero-dashboard-2200.avif 2200w"
+                sizes="(max-width: 760px) calc(100vw - 24px), (max-width: 1180px) calc(100vw - 40px), (max-width: 1440px) calc(100vw - 120px), 1112px"
+                type="image/avif"
+              />
+              <source
+                srcset="assets/hero-dashboard-1200.webp 1200w, assets/hero-dashboard-2200.webp 2200w"
+                sizes="(max-width: 760px) calc(100vw - 24px), (max-width: 1180px) calc(100vw - 40px), (max-width: 1440px) calc(100vw - 120px), 1112px"
+                type="image/webp"
+              />
+              <img
+                src="assets/hero-dashboard-1200.jpg"
+                srcset="assets/hero-dashboard-1200.jpg 1200w, assets/hero-dashboard-2200.jpg 2200w"
+                sizes="(max-width: 760px) calc(100vw - 24px), (max-width: 1180px) calc(100vw - 40px), (max-width: 1440px) calc(100vw - 120px), 1112px"
+                alt=""
+                width="1086"
+                height="613"
+                fetchpriority="high"
+                decoding="async"
+              />
+            </picture>
           </div>
         </div>
 
         <div class="hero__content" id="hero-content">
-          <img
-            class="hero__content-logo"
-            src="assets/logo-controle-empresarial.png"
-            alt="Controle Empresarial"
-            width="161"
-            height="43"
-          />
+          <picture>
+            <source srcset="assets/logo-controle-empresarial-512.avif" type="image/avif" />
+            <source srcset="assets/logo-controle-empresarial-512.webp" type="image/webp" />
+            <img
+              class="hero__content-logo"
+              src="assets/logo-controle-empresarial.png"
+              alt="Controle Empresarial"
+              width="161"
+              height="43"
+              decoding="async"
+            />
+          </picture>
 
           <h1 class="hero__title">
             Organize sua empresa sem
@@ -260,37 +293,76 @@
             <div class="problem-section__gallery">
               <figure class="problem-section__gallery-card problem-section__gallery-card--top">
                 <div class="problem-section__gallery-media problem-section__gallery-media--top">
-                  <img
-                    src="assets/s02-reuniao-principal.jpg"
-                    alt="Equipe reunida em uma sala de reunião corporativa"
-                    width="4096"
-                    height="2731"
-                    loading="lazy"
-                  />
+                  <picture>
+                    <source
+                      srcset="assets/s02-reuniao-principal-720.avif 720w, assets/s02-reuniao-principal-1200.avif 1200w"
+                      sizes="(max-width: 760px) calc(100vw - 48px), 560px"
+                      type="image/avif"
+                    />
+                    <source
+                      srcset="assets/s02-reuniao-principal-720.webp 720w, assets/s02-reuniao-principal-1200.webp 1200w"
+                      sizes="(max-width: 760px) calc(100vw - 48px), 560px"
+                      type="image/webp"
+                    />
+                    <img
+                      src="assets/s02-reuniao-principal.jpg"
+                      alt="Equipe reunida em uma sala de reunião corporativa"
+                      width="4096"
+                      height="2731"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </picture>
                 </div>
               </figure>
 
               <figure class="problem-section__gallery-card problem-section__gallery-card--left">
                 <div class="problem-section__gallery-media problem-section__gallery-media--left">
-                  <img
-                    src="assets/s02-macbook-mockup.jpg"
-                    alt="Mesa de trabalho com notebooks e indicadores de desempenho"
-                    width="4000"
-                    height="2191"
-                    loading="lazy"
-                  />
+                  <picture>
+                    <source
+                      srcset="assets/s02-macbook-mockup-720.avif 720w, assets/s02-macbook-mockup-1200.avif 1200w"
+                      sizes="(max-width: 760px) calc((100vw - 62px) / 2), 310px"
+                      type="image/avif"
+                    />
+                    <source
+                      srcset="assets/s02-macbook-mockup-720.webp 720w, assets/s02-macbook-mockup-1200.webp 1200w"
+                      sizes="(max-width: 760px) calc((100vw - 62px) / 2), 310px"
+                      type="image/webp"
+                    />
+                    <img
+                      src="assets/s02-macbook-mockup.jpg"
+                      alt="Mesa de trabalho com notebooks e indicadores de desempenho"
+                      width="4000"
+                      height="2191"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </picture>
                 </div>
               </figure>
 
               <figure class="problem-section__gallery-card problem-section__gallery-card--right">
                 <div class="problem-section__gallery-media problem-section__gallery-media--right">
-                  <img
-                    src="assets/s02-iphone-mockup.jpg"
-                    alt="Equipe analisando resultados e dashboards em uma apresentação"
-                    width="4096"
-                    height="2925"
-                    loading="lazy"
-                  />
+                  <picture>
+                    <source
+                      srcset="assets/s02-iphone-mockup-720.avif 720w, assets/s02-iphone-mockup-1200.avif 1200w"
+                      sizes="(max-width: 760px) calc((100vw - 62px) / 2), 232px"
+                      type="image/avif"
+                    />
+                    <source
+                      srcset="assets/s02-iphone-mockup-720.webp 720w, assets/s02-iphone-mockup-1200.webp 1200w"
+                      sizes="(max-width: 760px) calc((100vw - 62px) / 2), 232px"
+                      type="image/webp"
+                    />
+                    <img
+                      src="assets/s02-iphone-mockup.jpg"
+                      alt="Equipe analisando resultados e dashboards em uma apresentação"
+                      width="4096"
+                      height="2925"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </picture>
                 </div>
               </figure>
             </div>
@@ -801,6 +873,7 @@
                   width="60"
                   height="60"
                   loading="lazy"
+                  decoding="async"
                 />
                 <span class="testimonials-section__initials" id="testimonial-initials" hidden aria-hidden="true">RS</span>
               </div>
@@ -819,14 +892,19 @@
         <div class="offer-section__band" aria-hidden="true"></div>
         <div class="offer-section__inner">
           <div class="offer-card">
-            <img
-              class="offer-card__logo"
-              src="assets/logo-controle-empresarial.png"
-              alt="Controle Empresarial"
-              width="161"
-              height="43"
-              loading="lazy"
-            />
+            <picture>
+              <source srcset="assets/logo-controle-empresarial-512.avif" type="image/avif" />
+              <source srcset="assets/logo-controle-empresarial-512.webp" type="image/webp" />
+              <img
+                class="offer-card__logo"
+                src="assets/logo-controle-empresarial.png"
+                alt="Controle Empresarial"
+                width="161"
+                height="43"
+                loading="lazy"
+                decoding="async"
+              />
+            </picture>
             <div class="offer-card__rule" aria-hidden="true"></div>
 
             <h2 class="offer-card__title" id="offer-heading">
@@ -835,47 +913,47 @@
 
             <ul class="offer-card__list">
               <li>
-                <span class="offer-card__check" aria-hidden="true"><i class="fi fi-ss-check-circle"></i></span>
+                <span class="offer-card__check" aria-hidden="true"></span>
                 <span>+250 planilhas estratégicas</span>
               </li>
               <li>
-                <span class="offer-card__check" aria-hidden="true"><i class="fi fi-ss-check-circle"></i></span>
+                <span class="offer-card__check" aria-hidden="true"></span>
                 <span>+2.400 planilhas de gestão</span>
               </li>
               <li>
-                <span class="offer-card__check" aria-hidden="true"><i class="fi fi-ss-check-circle"></i></span>
+                <span class="offer-card__check" aria-hidden="true"></span>
                 <span>+1.400 planilhas pessoais</span>
               </li>
               <li>
-                <span class="offer-card__check" aria-hidden="true"><i class="fi fi-ss-check-circle"></i></span>
+                <span class="offer-card__check" aria-hidden="true"></span>
                 <span>+220 backgrounds Power BI + editável</span>
               </li>
               <li>
-                <span class="offer-card__check" aria-hidden="true"><i class="fi fi-ss-check-circle"></i></span>
+                <span class="offer-card__check" aria-hidden="true"></span>
                 <span>+2.000 contratos e documentos</span>
               </li>
               <li>
-                <span class="offer-card__check" aria-hidden="true"><i class="fi fi-ss-check-circle"></i></span>
+                <span class="offer-card__check" aria-hidden="true"></span>
                 <span>Curso de Excel completo</span>
               </li>
               <li>
-                <span class="offer-card__check" aria-hidden="true"><i class="fi fi-ss-check-circle"></i></span>
+                <span class="offer-card__check" aria-hidden="true"></span>
                 <span>Acesso vitalício</span>
               </li>
               <li>
-                <span class="offer-card__check" aria-hidden="true"><i class="fi fi-ss-check-circle"></i></span>
+                <span class="offer-card__check" aria-hidden="true"></span>
                 <span>Download disponível</span>
               </li>
               <li>
-                <span class="offer-card__check" aria-hidden="true"><i class="fi fi-ss-check-circle"></i></span>
+                <span class="offer-card__check" aria-hidden="true"></span>
                 <span>Uso offline</span>
               </li>
               <li>
-                <span class="offer-card__check" aria-hidden="true"><i class="fi fi-ss-check-circle"></i></span>
+                <span class="offer-card__check" aria-hidden="true"></span>
                 <span>Acesso pelo celular</span>
               </li>
               <li>
-                <span class="offer-card__check" aria-hidden="true"><i class="fi fi-ss-check-circle"></i></span>
+                <span class="offer-card__check" aria-hidden="true"></span>
                 <span>Arquivos editáveis e desbloqueados</span>
               </li>
             </ul>
@@ -1134,7 +1212,7 @@
               rel="noopener noreferrer"
             >
               <span class="hero__cta-inner">
-                <span>QUERO TER ACESSO</span>
+                <span>FALAR COM O SUPORTE</span>
                 <span class="icon-arrow" aria-hidden="true">
                   <svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -1166,92 +1244,5 @@
         </div>
       </footer>
     </main>
-    <script>
-      (function () {
-        var slides = [
-          {
-            quote:
-              'Saber que os arquivos são desbloqueados faz toda diferença, porque posso adaptar para minha realidade.',
-            name: 'Mariana Silva',
-            role: 'Gestora Financeira',
-            photo: 'assets/testimonial-mariana.jpg',
-            useInitials: false,
-          },
-          {
-            quote:
-              'Em poucos dias já organizei o fluxo de caixa e parei de perder tempo refazendo a mesma planilha.',
-            name: 'Ricardo Santos',
-            role: 'Empresário',
-            useInitials: true,
-            initials: 'RS',
-          },
-          {
-            quote:
-              'O acervo cobre desde o operacional até relatórios para a diretoria. Vale cada centavo.',
-            name: 'Carla Mendes',
-            role: 'Controller',
-            useInitials: true,
-            initials: 'CM',
-          },
-        ]
-
-        var idx = 0
-        var quoteEl = document.getElementById('testimonial-quote')
-        var nameEl = document.getElementById('testimonial-name')
-        var roleEl = document.getElementById('testimonial-role')
-        var avatarEl = document.getElementById('testimonial-avatar')
-        var initialsEl = document.getElementById('testimonial-initials')
-        var prevBtn = document.querySelector('.testimonials-section__nav-btn--prev')
-        var nextBtn = document.querySelector('.testimonials-section__nav-btn--next')
-
-        function render() {
-          var s = slides[idx]
-          quoteEl.textContent = s.quote
-          nameEl.textContent = s.name
-          roleEl.textContent = s.role
-          if (s.useInitials) {
-            avatarEl.setAttribute('hidden', '')
-            initialsEl.removeAttribute('hidden')
-            initialsEl.textContent = s.initials
-          } else {
-            avatarEl.removeAttribute('hidden')
-            initialsEl.setAttribute('hidden', '')
-            avatarEl.src = s.photo
-            avatarEl.alt = ''
-          }
-        }
-
-        function go(delta) {
-          idx = (idx + delta + slides.length) % slides.length
-          render()
-        }
-
-        if (prevBtn && nextBtn && quoteEl) {
-          prevBtn.addEventListener('click', function () {
-            go(-1)
-          })
-          nextBtn.addEventListener('click', function () {
-            go(1)
-          })
-        }
-
-        var faqItems = Array.prototype.slice.call(document.querySelectorAll('.faq-item'))
-        faqItems.forEach(function (item) {
-          item.addEventListener('toggle', function () {
-            if (!item.open) return
-            faqItems.forEach(function (other) {
-              if (other !== item) {
-                other.open = false
-              }
-            })
-          })
-        })
-
-        var footerYear = document.getElementById('footer-year')
-        if (footerYear) {
-          footerYear.textContent = String(new Date().getFullYear())
-        }
-      })()
-    </script>
   </body>
 </html>
