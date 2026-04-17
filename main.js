@@ -132,7 +132,6 @@
     '.faq-item',
     '.faq-section__support-title',
     '.faq-section .offer-card__cta',
-    '.site-footer__inner p',
   ].join(', ')
 
   var revealElements = Array.prototype.slice.call(document.querySelectorAll(revealSelector))
