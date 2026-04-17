@@ -793,7 +793,7 @@ a {
   margin: 0;
   color: var(--text);
   font-size: 26px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: var(--line-height-heading);
   text-wrap: pretty;
 }
@@ -1983,6 +1983,16 @@ a {
   }
 }
 
+@media (min-width: 1181px) {
+  .hero__content::before {
+    top: 50px;
+    height: 460px;
+    background:
+      radial-gradient(ellipse at 50% 12%, rgba(6, 15, 29, 0.98) 0%, rgba(6, 15, 29, 0.92) 30%, rgba(6, 15, 29, 0.68) 56%, rgba(6, 15, 29, 0.18) 82%, rgba(6, 15, 29, 0) 100%);
+    filter: blur(18px);
+  }
+}
+
 @media (max-width: 1180px) {
   .hero {
     padding-top: 24px;
@@ -2268,7 +2278,7 @@ a {
   }
 
   .problem-section__lead {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   .problem-section__gallery {
@@ -2281,7 +2291,7 @@ a {
   }
 
   .problem-section__gallery-card--left {
-    aspect-ratio: 310 / 256;
+    aspect-ratio: 232 / 256;
   }
 
   .problem-section__gallery-card--right {
@@ -2470,7 +2480,7 @@ a {
 
   .guarantee-section__inner {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 28px;
   }
 
@@ -2478,15 +2488,18 @@ a {
     flex: none;
     width: 100%;
     min-height: 220px;
+    justify-content: center;
   }
 
   .guarantee-section__big07 {
     font-size: clamp(112px, 46vw, 190px);
-    left: 42%;
+    left: 50%;
   }
 
   .guarantee-section__visual-inner {
+    align-items: center;
     padding-top: 28px;
+    text-align: center;
   }
 
   .guarantee-section__visual-label {
@@ -2504,6 +2517,8 @@ a {
   .guarantee-section__copy {
     flex: none;
     width: 100%;
+    align-items: center;
+    text-align: center;
   }
 
   .guarantee-section__title {
@@ -2512,9 +2527,11 @@ a {
   }
 
   .guarantee-section__body {
+    width: min(100%, 33ch);
     gap: 16px;
     font-size: clamp(14px, 4.6vw, 17px);
     line-height: 1.45;
+    text-align: center;
   }
 
   .modules-section {
