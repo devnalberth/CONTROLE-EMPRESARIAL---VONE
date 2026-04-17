@@ -2191,6 +2191,11 @@ a {
     transform: none !important;
   }
 
+  .problem-section__gallery-media picture {
+    width: 100%;
+    height: 100%;
+  }
+
   .problem-section__gallery-media img {
     width: 100% !important;
     height: 100% !important;
@@ -2372,7 +2377,7 @@ a {
   }
 
   .problem-section__title {
-    font-size: clamp(28px, 7vw, 32px);
+    font-size: clamp(24px, 6.2vw, 28px);
   }
 
   .problem-section__lead {
@@ -2641,11 +2646,11 @@ a {
   }
 
   .modules-section__inner {
-    padding-top: 64px;
+    padding-top: 24px;
   }
 
   .modules-section__title {
-    font-size: clamp(28px, 7vw, 32px);
+    font-size: clamp(20px, 5vw, 28px);
   }
 
   .modules-section__grid {
